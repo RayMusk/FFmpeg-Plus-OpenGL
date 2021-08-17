@@ -43,6 +43,8 @@ You can use <a href="Plus-GL-Shader">filter `plusglshader`</a> to render frame b
 
 | UpldateLog | Content |
 | ---- | ---- |
+| 时间 | 2021/08/17 |
+| - | 1.`plusglshader` Shader's playTime uniform value，when set start param，playTime will be begin with zero to duration when pts=start param |
 | Time | 2021/08/16 |
 | - | 1.`lutglshader` LUT-Filter Support Custom define size of lut-table image. |
 | Time | 2021/08/15 |
