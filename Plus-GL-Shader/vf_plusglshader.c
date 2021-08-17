@@ -458,7 +458,7 @@ static int filter_frame(AVFilterLink *inlink, AVFrame *in) {
         av_log(ctx, AV_LOG_DEBUG,
                "doing vf_plusglshader filter_frame gl render pts:%ld ,time->%f, duration:%f\n", in->pts, playTime, gs->duration_ft);
 
-        glUniform1f(gs->playTime, playTime);
+        glUniform1f(gs->playTime, playTime - gs->r_start_time_ft);
 
         glTexImage2D(GL_TEXTURE_2D, 0, gs->pix_fmt, inlink->w, inlink->h, 0, gs->pix_fmt, GL_UNSIGNED_BYTE, in->data[0]);
         glDrawArrays(GL_TRIANGLES, 0, 6);
