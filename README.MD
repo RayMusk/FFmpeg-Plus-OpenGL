@@ -40,6 +40,8 @@
 
 | 更新日志 | 内容 |
 | ---- | ---- |
+| 时间 | 2021/08/17 |
+| - | 1.`plusglshader` Shader的 playTime uniform值纠正，当设置start参数时，playTime在start时刻以0开始 |
 | 时间 | 2021/08/16 |
 | - | 1.`lutglshader` LUT 贴纸滤镜支持 自定义LUT大小渲染能力 |
 | 时间 | 2021/08/15 |
